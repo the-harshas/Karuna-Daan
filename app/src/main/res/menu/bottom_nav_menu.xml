@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/home_icon"/>
+    <item
+        android:id="@+id/donate"
+        android:title="Donate"
+        android:icon="@drawable/donate_icon"/>
+    <item
+        android:id="@+id/chat"
+        android:title="Chat"
+        android:icon="@drawable/chat_icon"/>
+    <item
+        android:id="@+id/feed"
+        android:title="Feed"
+        android:icon="@drawable/feed_icon"/>
+</menu>

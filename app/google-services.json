@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "166580803239",
+    "project_id": "find-the-person-31258",
+    "storage_bucket": "find-the-person-31258.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:166580803239:android:cd82d96ab4e3c645666d82",
+        "android_client_info": {
+          "package_name": "com.example.karunadaan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "166580803239-5a9brvhduu81m1le2mufm71qehgsmmpb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.karunadaan",
+            "certificate_hash": "cad0b5980e1ce9eccab1d938af6f477ae2643868"
+          }
+        },
+        {
+          "client_id": "166580803239-eq8ihp5lfj95kp8ovtb1gegmrba2fp70.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgAxIiVHOqeOz95DaoslGxzBNLdLo_5oY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "166580803239-eq8ihp5lfj95kp8ovtb1gegmrba2fp70.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

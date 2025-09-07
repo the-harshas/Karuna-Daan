@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/abeezee</item>
+        <item>@font/abel</item>
+        <item>@font/adamina</item>
+        <item>@font/adlam_display</item>
+        <item>@font/afacad_medium</item>
+        <item>@font/akaya_kanadaka</item>
+        <item>@font/ar_one_sans_medium</item>
+        <item>@font/baloo</item>
+        <item>@font/imprima</item>
+    </array>
+</resources>

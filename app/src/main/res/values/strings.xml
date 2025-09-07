@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Hope Hub</string>
+    <string name="app_slogan">Give From The Heart</string>
+    <string name="login_slogan_des">Choose any one</string>
+    <string name="login_donate">Donate</string>
+    <string name="login_ngo_agent">NGO Agent</string>
+    <string name="login_receiver">Acceptor</string>
+    <string name="login_donate_des">Donate your items for society</string>
+    <string name="login_ngo_agent_des">Food and items pickup and distribute</string>
+    <string name="login_receiver_des">Pickup Items</string>
+    <string name="login_bottom_text">I need some donation</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="about_page_description" translatable="false">
+        Hope Hub is a smart and intuitive platform designed to bridge the gap between NGOs, businesses, and individuals willing to donate surplus resources such as food, clothing, and essential materials.
+        Our mission is to reduce waste and ensure that donated items reach those in need efficiently.
+    </string>
+
+    <string name="about_contact_us">Contact us</string>
+    <string name="about_instagram">Follow us on Instagram</string>
+    <string name="about_facebook">Like us on Facebook</string>
+    <string name="about_play_store">Rate us on the Play Store</string>
+    <string name="about_youtube">Watch us on Youtube</string>
+    <string name="about_twitter">Follow us on Twitter</string>
+    <string name="about_github">Fork us on GitHub</string>
+    <string name="about_website">Visit our website</string>
+
+    <string name="tax_Benefit">
+      Tax Deduction under Section 80G
+        Under Section 80G of the Income Tax Act, donations made to eligible NGOs can qualify for a tax deduction of 50% of the donated
+        amount, encouraging individuals and corporations to support impactful social initiatives.
+
+    To avail your tax deductions under Section 80G, it’s important to confirm that the NGO is registered under this section (80G).
+        However, as per tax regulations, no deduction is allowed for cash donations exceeding ₹2000 (source: incometax.gov.in, 2024).
+        Donations to CRY India, for instance, can be conveniently made through multiple channels, including digital wallets, UPI, credit/debit card points redemption, and even legacy giving.
+
+    Social Responsibility
+        Supporting an NGO goes beyond financial benefits; it demonstrates a commitment to social responsibility. Through tax-exempt donations, you’re not only helping underserved communities but also aligning with responsible citizenship.
+        CRY India uses contributions to empower children with education, healthcare, and better living conditions.
+    </string>
+    <string name="tax_benefit_headline">
+        How To Save Tax By Donating to an NGO?
+    </string>
+    <string name="lorem_ipsum">
+        Hii
+    </string>
+</resources>

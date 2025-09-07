@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Border Stroke -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#FFFFFF" /> <!-- Background color inside the stroke -->
+            <stroke
+                android:width="49dp"
+                android:color="#FF0000" /> <!-- Red border -->
+        </shape>
+    </item>
+
+</layer-list>

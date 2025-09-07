@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/donate"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main.DonateActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Item For Donation"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/imprima"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="24dp"
+            android:layout_margin="10dp">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#1A000000"
+                android:paddingBottom="15dp">
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/profileImage"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="15dp"
+                    app:cardCornerRadius="24dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/profile_image"/>
+                </androidx.cardview.widget.CardView>
+                <TextView
+                    android:id="@+id/donarUserNameDonation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="User Name"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    app:layout_constraintTop_toTopOf="@id/profileImage"
+                    app:layout_constraintStart_toEndOf="@id/profileImage"
+                    app:layout_constraintBottom_toTopOf="@id/userLocation"/>
+                <TextView
+                    android:id="@+id/userLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phagwara, Punjab"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/black"
+                    android:textSize="10sp"
+                    android:visibility="invisible"
+                    app:layout_constraintTop_toBottomOf="@id/donarUserNameDonation"
+                    app:layout_constraintStart_toEndOf="@id/profileImage"
+                    app:layout_constraintBottom_toBottomOf="@id/profileImage"/>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/previewCardView"
+                    android:layout_width="216dp"
+                    android:layout_height="152dp"
+                    app:cardCornerRadius="32dp"
+                    android:elevation="12dp"
+                    android:layout_marginTop="70dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+                    <ImageView
+                        android:id="@+id/previewImageOfItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:scaleX="0.8"
+                        android:scaleY="0.8"
+                        android:padding="5dp"
+                        android:src="@drawable/upload_image"/>
+                </androidx.cardview.widget.CardView>
+                <EditText
+                    android:id="@+id/enterItemName"
+                    android:layout_width="318dp"
+                    android:layout_height="47dp"
+                    android:hint="Please Enter Item Name"
+                    android:textSize="15sp"
+                    android:minWidth="300dp"
+                    android:layout_marginTop="15dp"
+                    android:paddingStart="15dp"
+                    android:background="@drawable/edit_text_donate_background"
+                    app:layout_constraintTop_toBottomOf="@+id/previewCardView"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <LinearLayout
+                    android:id="@+id/selectAmountLinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintTop_toBottomOf="@+id/enterItemName"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    android:visibility="invisible"
+                    android:background="@drawable/edit_text_donate_background">
+                    <TextView
+                        android:id="@+id/selectAmount"
+                        android:layout_width="179dp"
+                        android:layout_height="47dp"
+                        android:layout_margin="5dp"
+                        android:text="Enter Amount  ₹"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:padding="2dp"/>
+                    <EditText
+                        android:id="@+id/enterAmount"
+                        android:layout_width="159dp"
+                        android:inputType="number"
+                        android:layout_height="40dp"
+                        android:scrollbarSize="109sp"
+                        android:layout_marginRight="35dp"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/selectItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintTop_toBottomOf="@+id/enterItemName"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent">
+                    <TextView
+                        android:id="@+id/selectItemcategory"
+                        android:layout_width="159dp"
+                        android:layout_height="47dp"
+                        android:layout_margin="5dp"
+                        android:text="Select Quantity"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:padding="5dp"/>
+                    <Spinner
+                        android:id="@+id/selectQuantity"
+                        android:layout_width="159dp"
+                        android:layout_height="47dp"
+                        android:scrollbarSize="109sp"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/spinner_outline"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linearLayoutLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/selectItem">
+                    <EditText
+                        android:id="@+id/enterLocation"
+                        android:layout_width="318dp"
+                        android:layout_height="47dp"
+                        android:hint="Please enter Address"
+                        android:textSize="15sp"
+                        android:layout_marginTop="15dp"
+                        android:paddingStart="15dp"
+                        android:background="@drawable/edit_text_donate_background"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mobileNumberLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayoutLocation">
+                    <EditText
+                        android:id="@+id/EnterMobileNumber"
+                        android:layout_width="318dp"
+                        android:layout_height="47dp"
+                        android:hint=" Mobile Number "
+                        android:textSize="15sp"
+                        android:minWidth="300dp"
+                        android:layout_marginTop="15dp"
+                        android:paddingStart="15dp"
+                        android:background="@drawable/edit_text_donate_background"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/itemsDescriptionLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/mobileNumberLayout">
+                    <EditText
+                        android:id="@+id/itemDescription"
+                        android:layout_width="318dp"
+                        android:layout_height="47dp"
+                        android:hint="Please add description "
+                        android:textSize="15sp"
+                        android:minWidth="300dp"
+                        android:layout_marginTop="15dp"
+                        android:paddingStart="15dp"
+                        android:background="@drawable/edit_text_donate_background"/>
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <Button
+            android:id="@+id/uploadDonation"
+            android:layout_width="118dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/donate_background"
+            android:text="Donate"
+            android:textColor="@color/white"
+            android:elevation="40dp"/>
+    </LinearLayout>
+
+</ScrollView>

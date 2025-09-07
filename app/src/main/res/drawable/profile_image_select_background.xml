@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Set the background color of the rounded shape -->
+     <!-- Replace with your desired color -->
+
+    <!-- Set the corner radius to make it round -->
+    <corners android:radius="63dp" /> <!-- Adjust the radius to your needs -->
+
+    <!-- Optional: Add a border around the background -->
+    <stroke
+        android:width="4dp"
+        android:color="#A100FF" /> <!-- Replace with your border color -->
+</shape>

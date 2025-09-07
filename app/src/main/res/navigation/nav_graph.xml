@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/home">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.example.karunadaan.Main.MainFragment"
+        android:label="MainFragment"
+        tools:layout="@layout/fragment_main">
+    </fragment>
+    <fragment
+        android:id="@+id/chat"
+        android:name="com.example.karunadaan.Main.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" />
+    <fragment
+        android:id="@+id/feed"
+        android:name="com.example.karunadaan.Main.LeaderShipFragment"
+        android:label="fragment_leader_ship"
+        tools:layout="@layout/fragment_leader_ship"
+        />
+    <fragment
+        android:id="@+id/donate"
+        android:name="com.example.karunadaan.Main.DonateFragment"
+        android:label="DonateFragment"
+        tools:layout="@layout/fragment_donate"/>
+</navigation>
